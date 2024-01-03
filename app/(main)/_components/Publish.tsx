@@ -62,6 +62,8 @@ export const Publish = ({ initialData }: PublishProps) => {
         setTimeout(() => {
             setCopied(false)
         }, 1000)
+
+        toast.message('Copied to clipboard')
     }
     return (
         <Popover>
