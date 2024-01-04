@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Toaster } from 'sonner'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
+import { SpeedAnalytics } from '@vercel/
 import { EdgeStoreProvider } from '@/lib/edgestore'
 
 import './globals.css'
@@ -43,6 +44,7 @@ export default function RootLayout({
             <ThemeProvider attribute='class' defaultTheme='system' enableSystem disableTransitionOnChange storageKey='jottr-key'>
               {children}
               <Analytics />
+              <SpeedInsights />
               <Toaster position='bottom-center' />
               <ModalProvider />
             </ThemeProvider>
