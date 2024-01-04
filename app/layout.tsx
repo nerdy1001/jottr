@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import { Toaster } from 'sonner'
 import { Inter } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/react'
-import { SpeedAnalytics } from '@vercel/speed-insights/next'
+import { SpeedInsights } from '@vercel/speed-insights/next'
 import { EdgeStoreProvider } from '@/lib/edgestore'
 
 import './globals.css'
