@@ -63,7 +63,7 @@ export const Publish = ({ initialData }: PublishProps) => {
             setCopied(false)
         }, 1000)
 
-        toast.message('Copied to clipboard')
+        toast.success('Copied to clipboard')
     }
     return (
         <Popover>
